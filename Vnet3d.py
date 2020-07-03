@@ -64,7 +64,7 @@ def dice_loss_v3(gt, pred):
     return dice_loss
 
 def hybrid_loss(gt, pred):
-    return dice_loss(gt, pred)
+    return dice_loss_v1(gt, pred)
 
 def vnet(num_input_channel, base_size, numofclasses):
 
